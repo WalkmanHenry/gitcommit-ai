@@ -1,0 +1,89 @@
+{
+  "name": "gitcommit-ai",
+  "displayName": "GitCommit AI",
+  "description": "AI-powered Git commit message generator",
+  "version": "0.1.0",
+  "publisher": "YOUR_PUBLISHER_NAME",
+  "engines": {
+    "vscode": "^1.74.0"
+  },
+  "categories": [
+    "Machine Learning",
+    "Source Control",
+    "Other"
+  ],
+  "keywords": [
+    "git",
+    "commit",
+    "ai",
+    "message",
+    "automation"
+  ],
+  "activationEvents": [
+    "onCommand:gitcommit-ai.generateCommitMessage"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "gitcommit-ai.generateCommitMessage",
+        "title": "Generate Commit Message",
+        "category": "GitCommit AI",
+        "icon": "$(sparkle)"
+      },
+      {
+        "command": "gitcommit-ai.generateCommitMessageWithType",
+        "title": "Generate Commit Message with Type",
+        "category": "GitCommit AI"
+      }
+    ],
+    "menus": {
+      "scm/title": [
+        {
+          "command": "gitcommit-ai.generateCommitMessage",
+          "group": "navigation",
+          "when": "scmProvider == git"
+        }
+      ]
+    },
+    "configuration": {
+      "title": "GitCommit AI",
+      "properties": {
+        "gitcommit-ai.commitStyle": {
+          "type": "string",
+          "default": "conventional",
+          "enum": [
+            "conventional",
+            "simple",
+            "detailed"
+          ],
+          "description": "Commit message style"
+        },
+        "gitcommit-ai.maxLength": {
+          "type": "number",
+          "default": 72,
+          "description": "Maximum commit message length"
+        }
+      }
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./"
+  },
+  "devDependencies": {
+    "@types/node": "^18.x",
+    "@types/vscode": "^1.74.0",
+    "typescript": "^5.x"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/YOUR_USERNAME/gitcommit-ai"
+  },
+  "bugs": {
+    "url": "https://github.com/YOUR_USERNAME/gitcommit-ai/issues"
+  },
+  "homepage": "https://github.com/YOUR_USERNAME/gitcommit-ai#readme",
+  "license": "MIT"
+}
