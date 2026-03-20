@@ -3,7 +3,7 @@
   "displayName": "GitCommit AI",
   "description": "AI-powered Git commit message generator",
   "version": "0.1.0",
-  "publisher": "YOUR_PUBLISHER_NAME",
+  "publisher": "WalkmanHenry",
   "engines": {
     "vscode": "^1.74.0"
   },
@@ -79,11 +79,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/YOUR_USERNAME/gitcommit-ai"
+    "url": "https://github.com/WalkmanHenry/gitcommit-ai"
   },
   "bugs": {
-    "url": "https://github.com/YOUR_USERNAME/gitcommit-ai/issues"
+    "url": "https://github.com/WalkmanHenry/gitcommit-ai/issues"
   },
-  "homepage": "https://github.com/YOUR_USERNAME/gitcommit-ai#readme",
+  "homepage": "https://github.com/WalkmanHenry/gitcommit-ai#readme",
   "license": "MIT"
 }

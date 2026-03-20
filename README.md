@@ -24,8 +24,8 @@
 
 如果这个插件帮到了你，欢迎支持我继续开发：
 
-- [GitHub Sponsors](https://github.com/sponsors/YOUR_USERNAME) - 支持美元
-- [爱发电](https://afdian.net/@YOUR_USERNAME) - 支持人民币
+- [GitHub Sponsors](https://github.com/sponsors/WalkmanHenry) - 支持美元
+- [爱发电](https://afdian.net/@WalkmanHenry) - 支持人民币
 
 ## 📄 License
 
